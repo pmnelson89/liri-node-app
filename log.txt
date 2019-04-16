@@ -1,18 +1,19 @@
+
+------------------------------------------
 Spotify Results
-CalifornicationSpotify Results
-Arist: comethru
-Song Title: comethru
-Song preview: https://api.spotify.com/v1/tracks/18uwL0vNUanqZH0ro2QcOP
-Album: summer,Spotify Results
-Arist: Molly Smiles
-Song Title: Molly Smiles
-Song preview: https://api.spotify.com/v1/tracks/4RUoYl8qqiSRwhDvZv733k
-Album: Uptown Girls [Music From and Inspired by the Motion Picture]Spotify Results
-Arist: thank u, next
-Song Title: thank u, next
-Song preview: https://api.spotify.com/v1/tracks/3e9HZxeyfWwjeyPAMmWSSQ
-Album: thank u, nextSpotify Results
-Arist: Miss September
-Song Title: Miss September
-Song preview: https://api.spotify.com/v1/tracks/01NRpu9CeEx4DqiDjG20PA
-Album: Shouted, Written Down & Quoted
+Arist: I Want It That Way
+Song Title: I Want It That Way
+Song preview: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+------------------------------------------
+Spotify Results
+Arist: Californication
+Song Title: Californication
+Song preview: https://api.spotify.com/v1/tracks/48UPSzbZjgc449aqz8bxox
+Album: Californication (Deluxe Version)
+------------------------------------------
+Spotify Results
+Arist: I Want It That Way
+Song Title: I Want It That Way
+Song preview: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
