@@ -3,11 +3,9 @@ require("dotenv").config();
 const keys = require("./keys.js");;
 const Spotify = require("node-spotify-api")
 const spotify = new Spotify(keys.spotify);
-const omdbApi = require("omdb-client");
 const axios = require("axios");
 const fs = require("fs");
 const moment = require("moment");
-// const request = require("request");
 
 //what type of search you want to do
 const command = process.argv[2];
@@ -32,21 +30,30 @@ function runApp(command, param) {
 //concert-this
 function concertSearch(param) {
    
-    var queryURL = "https://rest.bandsintown.com/artists/" + param + "/events?app_id=codingbootcamp";
+    var queryUrl = "https://rest.bandsintown.com/artists/" + param + "/events?app_id=codingbootcamp";
 
-    axios.get(queryURL).then (
+    axios.get(queryUrl).then (
         function (response) {
-            console.log(response);
-            console.log("Venue: " + response.data[0].venue.name + "\n");
-            console.log("Location: " + response.data[0].venue.city + "\n");
-            console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
+            
+            var band = response.data[0];
 
-            var newConcert = "Bands In Town Results" + "\nVenue: " + response.data[0].venue.name + "\nLocation: " + response.data[0].venue.city + "\nDate: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n";
+            var logConcert = [
+                "\nBANDS IN TOWN RESULT",
+                "Artist: " + param, 
+                "Venue: " + band.venue.name,
+                "Location: " + band.venue.city,
+                "Date: " + moment(band.datetime).format("MM-DD-YYYY"),
+                "============================="
+            ].join("\n\n");
 
-            fs.appendFile("log.txt", newConcert, function(err) {
-                if (err)
+            console.log(logConcert);
+    
+            fs.appendFile("log.txt", logConcert, function(err) {
+                if (err) {
                     console.log(err);
-            });
+                }
+
+            });  
         }
     );
 };
@@ -55,7 +62,7 @@ function concertSearch(param) {
 function songSearch(param) {
     
     if(!param) {
-        param = "The Sign";
+        param = "The Sign Ace of Base";
     }
 
     spotify.search({ type: "track", query: param}, function (err, data) {
@@ -64,17 +71,23 @@ function songSearch(param) {
             return;
         }
 
-        console.log("------------------------------------------\n");
-        console.log("Artist Name: " + data.tracks.items[0].album.artists[0].name + "\n");
-        console.log("Song Title: " + data.tracks.items[0].name + "\n");
-        console.log("Song preview: " + data.tracks.items[0].href + "\n");
-        console.log("Album: " + data.tracks.items[0].album.name + "\n");
+        var song = data.tracks.items[0];
 
-        var newSong = "\n------------------------------------------\nSpotify Results" + "\nArist: " + data.tracks.items[0].name + "\nSong Title: " + data.tracks.items[0].name + "\nSong preview: " + data.tracks.items[0].href + "\nAlbum: " + data.tracks.items[0].album.name;
+        var logSong = [
+            "\nSPOTIFY RESULT",
+            "Song Title: " + song.name,
+            "Artist: " + song.album.artists[0].name,
+            "Song preview: " + song.href,
+            "Album: " + song.album.name,
+            "============================="
+        ].join("\n\n");
 
-        fs.appendFile("log.txt", newSong, function(err) {
-            if (err) 
+        console.log(logSong);
+
+        fs.appendFile("log.txt", logSong, function(err) {
+            if (err) {
                 console.log(err);
+            }
         });
     });  
 };
@@ -85,28 +98,36 @@ function movieSearch(param) {
     if(!param) {
         param = "Mr. Nobody";
     }
-    var queryURL = "http://www.omdbapi.com?/t=" + param + "&y=&plot=short&apikey=trilogy";
 
-    axios.get(queryURL).then(
+    var queryUrl = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
+    console.log("URL: " + queryUrl);
+    console.log("input: " + param);
 
-        function (response) {
-            console.log(response);
-            console.log("Title: " + response.data.Title + "\n");
-            console.log("Released: " + response.data.Year + "\n");
-            console.log("IMDB Rating: " + response.data.imdbRating + "\n");
-            console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].value + "\n");
-            console.log("Country: " + response.data.Country + "\n");
-            console.log("Language: " + response.data.Language + "\n");
-            console.log("Plot: " + response.data.Plot + "\n");
-            console.log("Actors: " + response.data.Actors + "\n");
+    axios.get(queryUrl).then(
+        
+        function(response) {
+            var movie = response.data;
 
-        var newMovie = "IMDB Results" + "\nTitle: " + response.data.Title + "\nReleased: " + response.data.Year + "\nRating: " + response.data.imdbRating + "\nRotten Tomatoes Rating: " + response.data.Ratings[1].value + "\nCountry: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors;
+            var logMovie = [
+                "\nOMDB RESULT",
+                "Title: " + movie.Title,
+                "Release Year: " + movie.Year,
+                "IMDB Rating: " + movie.imdbRating,
+                "Rotten Tomatoes Rating: " + movie.Ratings[1].Value,
+                "Plot: " + movie.Plot,
+                "Actors: " + movie.Actors,
+                "============================="
+            ].join("\n\n");
 
-        fs.appendFile("log.txt", newMovie, function (err) {
-            if (err)
-                console.log(err);
-        });
-    });
+            console.log(logMovie);
+    
+            fs.appendFile("log.txt", logMovie, function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
+        },
+    );
 }
 
 function itSays() {
