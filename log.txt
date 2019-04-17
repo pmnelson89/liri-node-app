@@ -1,24 +1,68 @@
 
 BANDS IN TOWN RESULT
 
-Artist: drake
+Artist: greta van fleet
 
-Venue: SPORTPALEIS
+Venue: Metropolitan Theatre
 
-Location: Merksem
+Location: Mexico City
 
-Date: 04-19-2019
+Date: 04-29-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: greta van fleet
+
+Venue: Metropolitan Theatre
+
+Location: Mexico City
+
+Date: 04-30-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: greta van fleet
+
+Venue: Bayfront Park Amphitheatre
+
+Location: Miami
+
+Date: 05-07-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: greta van fleet
+
+Venue: Daily's Place Amphitheatre
+
+Location: Jacksonville
+
+Date: 05-09-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: greta van fleet
+
+Venue: Orlando Amphitheater at Central Florida Fairgrounds
+
+Location: Orlando
+
+Date: 05-10-2019
 
 =============================
 SPOTIFY RESULT
 
-Song Title: Convex
+Song Title: When the Levee Breaks - Remastered
 
-Artist: St. Paul & The Broken Bones
+Artist: Led Zeppelin
 
-Song preview: https://api.spotify.com/v1/tracks/5jC4UZs0XkdN4mu1PIyDbU
+Song preview: https://api.spotify.com/v1/tracks/05f8Hg3RSfiPSCBQOtxl3i
 
-Album: Young Sick Camellia
+Album: Led Zeppelin IV (Deluxe Edition)
 
 =============================
 SPOTIFY RESULT
@@ -34,17 +78,17 @@ Album: The Sign (US Album) [Remastered]
 =============================
 OMDB RESULT
 
-Title: Training Day
+Title: Hell or High Water
 
-Release Year: 2001
+Release Year: 2016
 
-IMDB Rating: 7.7
+IMDB Rating: 7.6
 
-Rotten Tomatoes Rating: 72%
+Rotten Tomatoes Rating: 97%
 
-Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
+Plot: A divorced father and his ex-con older brother resort to a desperate scheme in order to save their family's ranch in West Texas.
 
-Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+Actors: Dale Dickey, Ben Foster, Chris Pine, William Sterchi
 
 =============================
 OMDB RESULT
@@ -71,5 +115,60 @@ Artist: Backstreet Boys
 Song preview: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
 
 Album: The Hits--Chapter One
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: John Mayer
+
+Venue: Dead & Company
+
+Location: Mountain View
+
+Date: 05-31-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: John Mayer
+
+Venue: Dead & Company
+
+Location: Mountain View
+
+Date: 06-01-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: John Mayer
+
+Venue: Dead & Company
+
+Location: Los Angeles
+
+Date: 06-03-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: John Mayer
+
+Venue: Dead & Company
+
+Location: Los Angeles
+
+Date: 06-04-2019
+
+=============================
+BANDS IN TOWN RESULT
+
+Artist: John Mayer
+
+Venue: Dead & Company
+
+Location: Quincy
+
+Date: 06-07-2019
 
 =============================
