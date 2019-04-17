@@ -28,7 +28,7 @@ This command uses axios to pull the next five shows from the Bands In Town API a
 ![alt text](screenshots/concert-this-default.png "concert-this results with no artist")
 
 ## spotify-this-song
-This command pulls song information from the Spotify API and displays it in the console as well as the log.txt file.  This information will include the artist, the song name, a preview link of the song from Spotify, and the album the song is from.  If no song is entered for the search, the app will default to "The Sign" by Ace of Base. __NOTE:  YOU MUST HAVE A SPOTIFY STORED IN YOUR OWN .ENV FILE FOR THIS TO WORK.__
+This command pulls song information from the Spotify API and displays it in the console as well as the log.txt file.  This information will include the artist, the song name, a preview link of the song from Spotify, and the album the song is from.  If no song is entered for the search, the app will default to "The Sign" by Ace of Base. __NOTE:  YOU MUST HAVE A SPOTIFY API KEY STORED IN YOUR OWN .ENV FILE FOR THIS TO WORK.__
 
 * __Terminal:__
 
