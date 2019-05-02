@@ -172,3 +172,29 @@ Location: Quincy
 Date: 06-07-2019
 
 =============================
+SPOTIFY RESULT
+
+Song Title: Gimme Shelter
+
+Artist: The Rolling Stones
+
+Song preview: https://api.spotify.com/v1/tracks/6H3kDe7CGoWYBabAeVWGiD
+
+Album: Let It Bleed
+
+=============================
+OMDB RESULT
+
+Title: Training Day
+
+Release Year: 2001
+
+IMDB Rating: 7.7
+
+Rotten Tomatoes Rating: 72%
+
+Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
+
+Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+
+=============================
