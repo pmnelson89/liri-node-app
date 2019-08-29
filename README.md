@@ -2,6 +2,15 @@
 
 This application uses Node.js to create a bot that takes in arguments and returns data.
 
+## Technology
+* JavaScript
+* Node.js
+* Bands In Town API
+* Spotify API
+* OMDB API
+* Axios
+* moment.js
+
 #### How To Use
 
 In your command line, enter "node liri.js" followed by the command you want to perform and the parameter you would like to search for.
